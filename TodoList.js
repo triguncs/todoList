@@ -30,6 +30,10 @@ function addTodo() {
   const dateElement = document.querySelector('.js-todoDate');
   const date = dateElement.value;
 
+  if (name === '' || date === '') {
+    return;
+  }
+
   name = name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
   todoList.push(name);
