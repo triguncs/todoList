@@ -1,0 +1,81 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ece0d1;
+}
+
+.container {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  align-self: center;
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-grid div {
+  background: #E7D7C9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.name-input,
+.date-input {
+  font-size: 15px;
+  padding: 8px;
+  background-color: #dbc1ac;
+  border: 2px solid #967259;
+  border-radius: 10px;
+  color: #38220f;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.add-todo-button {
+  background-color: #dbc1ac;
+  border: 2px solid #967259;
+  border-radius: 10px;
+  color: #38220f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.add-todo-button:hover {
+  transform: scale(1.1);
+}
+
+.delete-todo-button {
+  background-color: #E7D7C9;
+  border: 2px solid #dbc1ac;
+  border-radius: 10px;
+  color: #38220f;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.delete-todo-button:hover {
+  transform: scale(1.1);
+}
+

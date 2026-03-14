@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="TodoList.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Todo List</h2>
+
+    <div class="todo-input-grid">
+      <input placeholder="Todo Name" class="js-name-input name-input" onkeydown="if (event.key === 'Enter') {
+        addTodo();
+      }">
+      <input type="date" class="js-todoDate date-input">
+      <button onclick="
+        addTodo();
+      " class="add-todo-button">Add</button>
+    </div>
+    <div class="js-todo-list todo-grid"></div>
+
+  </div>
+
+  <script src="TodoList.js"></script>
+  
+</body>
+</html>
